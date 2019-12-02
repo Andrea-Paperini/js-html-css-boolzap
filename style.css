@@ -1,0 +1,155 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.container{
+    margin-top: 20px;
+    z-index: 0;
+    width: 100vw;
+    height: 700px;
+}
+.container_true{
+  margin: auto;
+  border: 1px solid blue;
+    width: 90%;
+    height: 100%;
+}
+.clearfix::after{
+    display: table;
+     content: "";
+     clear: both;
+}
+.right{
+float: right;
+width: 75%;
+height: 100%;
+
+}
+.left{
+    float: left;
+    width: 25%;
+    /* background-color: red; */
+    height: 100%;
+    border-right: 1px solid lightgrey;
+}
+.nav-right{
+    width: 100%;
+    height: 70px;
+display: flex;
+flex-direction: row;
+margin-left: 15px;
+margin-top: 10px;
+
+}
+.img-responsive{
+    height: 50px;
+    margin-right: 15px;
+}
+.vertical-access{
+    flex-direction: column;
+}
+.icon-right{
+    display: flex;
+justify-content: space-around;
+width: 10%;
+margin-left: 66%;
+margin-top: 10px;
+color: lightgrey;
+}
+.container-messaggi{
+    width: 100%;
+    height: 78%;
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+.ricevuti{
+    float: left;
+    width: 100%;
+margin-left: 80px;
+margin-top: 60px;
+}
+.inviati{
+    float: right;
+    width: 14%;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+.footer{
+    width: 100%;
+    height: 11.4%;
+    display: flex;
+    flex-direction: column;
+}
+.chat-input {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-input input {
+    width: 700px;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    background-color: lightgrey;
+}
+.chat-input i{
+    font-size: 30px;
+    color: darkgrey;
+    margin: 0 50px;
+}
+.nav-left{
+    width: 100%;
+    height: 70px;
+display: flex;
+flex-direction: row;
+margin-top: 10px;
+background-color: white;
+}
+.icon-left{
+    display: flex;
+    justify-content: space-around;
+width: 30%;
+margin-left: 52%;
+margin-top: 10px;
+color: lightgrey;
+}
+.left .img-responsive{
+    margin-left: 10px;
+}
+.cerca{
+}
+.cerca button {
+    margin-left: 10px;
+}
+.cerca input{
+margin-left: 10px;
+width: 87%;
+}
+.lista{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+        width: 90%;
+}
+.nome{
+    display: flex;
+    flex-direction: column;
+}
+.ora{
+position: absolute;
+left: 290px;
+top: 5px;
+}
+.container-lista{
+    display: flex;
+    flex-direction: column;
+}
