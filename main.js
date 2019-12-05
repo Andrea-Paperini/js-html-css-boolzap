@@ -58,3 +58,28 @@ $(document).ready(function() {
         }
     });
 });
+// Ricerca della chat se corrisponde a ciò che viene inserito
+$('.cerca').keyup(function(event) {
+    // Creo la variabile del testo(scritto) che se corrisponde alla ricerca si va avanti
+    var testo_ricerca = $('.cerca').val();
+    // Se si sta effettivamente digitando perciò è diverso da 0 allora si procede
+    if (testo_ricerca.length != 0) {
+        // mi aggancio al contenitore e controllo ogni componente con each
+        $('.container-lista').each(function() {
+            // se ciò che è digitato può essere trovato dentro nome allora lo scrivo
+            var elemento_corrente = $(this).find('.nome').text();
+            // Uso to LowerCase per controllare se ciò che inserito, diventando minuscolo corrisponde ad una chat da minuscolo cosi non è necessario scriverlo obbligatoriamente maiuscolo
+            if (elemento_corrente.toLowerCase().includes(testo_ricerca.toLowerCase()))
+            // quando lo trova allora lo mostra
+            {
+                $(this).show();
+                // il resto (this) lo nasconde
+            } else {
+                $(this).hide();
+            }
+        });
+    } else {
+        $('.lista').show();
+    }
+
+});
