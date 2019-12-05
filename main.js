@@ -3,11 +3,11 @@ $(document).ready(function() {
         invia_messaggio();
         // risposta_computer();
         // tempoRisposta();
-        setTimeout(risposta_computer, 3000);
+        setTimeout(risposta_computer, 1000);
     });
     // Creo una funzione per l'invio del messaggio
     function invia_messaggio() {
-        $(".messaggio-vocale").click(function() {
+        // $(".messaggio-vocale").click(function() {
             // Recupero il testo del messaggio
             var testo_messaggio = $(".msg").val();
             // controllo se il messaggio è diverso da(elementi 0) e quindi non è vuoto
@@ -20,14 +20,14 @@ $(document).ready(function() {
                 nuovo_messaggio.addClass("inviati");
                 // Ci inserisco il nuovo messaggio come ultimo
                 $(".container-messaggi").append(nuovo_messaggio);
-                risposta_computer();
+                // risposta_computer();
             }
-        });
+        // });
     }
 
     // Creo una funzione per la ricezione del messaggio
     function risposta_computer() {
-        $(".messaggio-vocale").click(function() {
+        // $(".messaggio-vocale").click(function() {
             // Recupero il testo del messaggio
             var messaggio_risposta = $(".msg").val();
             // controllo se il messaggio è diverso da(elementi 0) e quindi non è vuoto
@@ -42,7 +42,7 @@ $(document).ready(function() {
                 $(".container-messaggi").append(messaggio_risposta);
 
             }
-        });
+        // });
     }
 
     // Creo la funzione per togliere il microfono se sto scrivendo, altrimenti lo rimetto

@@ -5,6 +5,7 @@
 }
 
 .container {
+    background-color: lightgreen;
     margin-top: 20px;
     z-index: 0;
     width: 100vw;
@@ -12,6 +13,7 @@
 }
 
 .container_true {
+    z-index: 1;
     background-color: #EDEDED;
     margin: auto;
     border: 1px solid blue;
