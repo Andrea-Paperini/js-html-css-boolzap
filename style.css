@@ -70,7 +70,8 @@
 
 .container-messaggi {
     width: 100%;
-    height: 78%;
+    display: none;
+    height: 100%;
     background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,11 +80,21 @@
 
 .ricevuti {
     float: left;
-    width: 14%;
+    width: 20%;
     margin-left: 80px;
     margin-top: 60px;
     background-color: white;
     clear: both;
+    height: 36px;
+    margin: 7px 0 7px 7px;
+    border-top: 1px solid #F5F5F5;
+    border-right: 0;
+    border-bottom: 1px solid #F5F5F5;
+    border-left: 1px solid #F5F5F5;
+    background: #fff;
+    line-height: 36px;
+    text-align: center;
+    color: #B6B9BB;
 }
 
 .inviati {
@@ -93,6 +104,14 @@
     margin-top: 20px;
     background-color: green;
     clear: both;
+    margin: 7px 7px 7px 0;
+    padding: 0 10px;
+    border-left: 0;
+    border-top: 1px solid #F5F5F5;
+    border-right: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+    border-radius: 0px 3px 3px 0;
+    color: #B6B9BB;
 }
 
 .footer {
@@ -212,4 +231,12 @@
 
 .Structure {
     border-radius: 100px;
+}
+
+.active {
+    display: block;
+}
+
+.wrapper {
+    height: 78%;
 }
